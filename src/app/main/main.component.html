@@ -1,0 +1,9 @@
+<div class="main" 
+[ngClass]="{'cloudy': weather === 'Clouds',
+            'sunny': weather === 'Clear',
+            'rainy': weather === 'Rain',
+            'snowy': weather === 'Snow'}">
+</div>
+<select [(ngModel)]="selectedCity" (ngModelChange)="showWeather($event)">
+  <option *ngFor="let city of cities">{{ city }}</option>
+</select>
