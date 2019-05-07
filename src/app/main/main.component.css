@@ -1,10 +1,21 @@
+.hero {
+    width: 90vw;
+    height: 90vh;
+    margin-left: 20px;
+    border-radius: 3px;
+}
+
 .main {
-    width: 100vw;
-    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 20px;
+    height: 600px;
+    padding-top: 60px;
+    background-image: url(../../assets/home.jfif)
 }
 
 .rainy {
-    background-image: url(../../assets/rainy.jpg);
+    background-image: url(../../assets/rainy.jfif);
 }
 
 .sunny {
@@ -16,6 +27,136 @@
 }
 
 .cloudy {
-    background-image: url(../../assets/cloudy.png);
+    background-image: url(../../assets/cloudy.jpg);
 }
+
+.fog {
+    background-image: url(../../assets/foggy.jfif);
+}
+.mist {
+    background-image: url(../../assets/mist.jfif);
+}
+
+.select {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+select {
+    margin-top: 20px;
+}
+
+.temperature {
+    margin-left: 46%;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.city {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.weather {
+    color: white;
+    margin-left: 50%;
+    margin-top: 10px;
+}
+
+.minMaxTemp {
+    color: white;
+    margin-left: 45%;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: rgba(124, 121, 121, 0.3);
+    width: 100px;
+    height: 30px;
+    padding: 15px;
+    padding-left: 20px;
+}
+
+.wind {
+    display: inline-block;
+    float: left;
+    width: 20%;
+    height: 120px;
+    margin-left: 200px;
+    margin-top: 50px;
+    color: white;
+    background-color: rgba(124, 121, 121, 0.3);
+    margin-right: 10px;
+    padding: 5px;
+}
+
+#wind {
+    margin-top: 0;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+}
+
+#windSpeed {
+    text-align: center;
+    margin-right: 10px;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+#windDirection {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.humidity {
+    display: inline-block;
+    float: left;
+    width: 20%;
+    height: 120px;
+    margin-top: 50px;
+    color: white;
+    background-color: rgba(124, 121, 121, 0.3);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+#humidity {
+    margin-top: 0;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+}
+
+#hum {
+    text-align: center;
+    font-size: 20px;
+}
+
+.sun {
+    display: inline-block;
+    float: left;
+    width: 20%;
+    height: 120px;
+    margin-top: 50px;
+    color: white;
+    background-color: rgba(124, 121, 121, 0.3);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+#sun {
+    margin-top: 0;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+}
+
+#sunTime {
+    font-size: 20px;
+    text-align: center;
+}
+
 

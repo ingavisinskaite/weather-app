@@ -1,9 +1,32 @@
-<div class="main" 
-[ngClass]="{'cloudy': weather === 'Clouds',
+<div class="hero">
+  <div class="select">
+    <span>Select Your City </span>
+    <select [(ngModel)]="selectedCity" (ngModelChange)="showWeathers($event)">
+      <option *ngFor="let city of cities">{{city.capital}}</option>
+    </select>
+  </div>
+  <div class="main" [ngClass]="{'cloudy': weather === 'Clouds',
             'sunny': weather === 'Clear',
             'rainy': weather === 'Rain',
-            'snowy': weather === 'Snow'}">
+            'snowy': weather === 'Snow',
+            'fog': weather === 'Fog',
+            'mist': weather === 'Mist'}">
+    <div class="city"><img src="../../assets/placeholder.png"> {{selectedCity}}</div>
+    <div class="temperature">{{ temperature }} </div>
+    <div class="weather">{{ weather }}</div>
+    <div class="minMaxTemp"> {{ minTemp }}{{ maxTemp }}</div>
+    <div class="wind"> 
+      <p id="wind"> <img src="../../assets/wind.png"> Wind</p>
+      <p id="windSpeed">{{ windSpeed }}</p>
+      <p id="windDirection">{{ windDirection }}</p>
+    </div>
+    <div class="humidity"> 
+      <p id="humidity"><img src="../../assets/humidity.png"> Humidity</p>
+      <p id="hum">{{ humidity }}</p>
+    </div>
+    <div class="sun">
+      <p id="sun"><img src="../../assets/sun.png"> Sunrise / Sunset</p>
+      <p id="sunTime">{{ sunrise }} {{ sunset }}</p> 
+    </div>
+  </div>
 </div>
-<select [(ngModel)]="selectedCity" (ngModelChange)="showWeather($event)">
-  <option *ngFor="let city of cities">{{ city }}</option>
-</select>
