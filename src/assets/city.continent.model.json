@@ -36,7 +36,7 @@
     },
     {
         "countryName": "Antarctica",
-        "capital": "",
+        "capital": "Antarctica",
         "continentName": "Antarctica"
     },
     {
@@ -491,7 +491,7 @@
     },
     {
         "countryName": "Bouvet Island",
-        "capital": "",
+        "capital": "Bouvet Island",
         "continentName": "Antarctica"
     },
     {
@@ -546,7 +546,7 @@
     },
     {
         "countryName": "Heard Island and McDonald Islands",
-        "capital": "",
+        "capital": "Heard Island and McDonald Islands",
         "continentName": "Antarctica"
     },
     {
@@ -596,12 +596,12 @@
     },
     {
         "countryName": "U.S. Minor Outlying Islands",
-        "capital": "",
+        "capital": "U.S. Minor Outlying Islands",
         "continentName": "Oceania"
     },
     {
         "countryName": "Israel",
-        "capital": "",
+        "capital": "Israel",
         "continentName": "Asia"
     },
     {
@@ -1131,7 +1131,7 @@
     },
     {
         "countryName": "British Indian Ocean Territory",
-        "capital": "",
+        "capital": "British Indian Ocean Territory",
         "continentName": "Asia"
     },
     {
@@ -1141,7 +1141,7 @@
     },
     {
         "countryName": "Palestine",
-        "capital": "",
+        "capital": "Palestine",
         "continentName": "Asia"
     },
     {
@@ -1156,7 +1156,7 @@
     },
     {
         "countryName": "Tokelau",
-        "capital": "",
+        "capital": "Tokelau",
         "continentName": "Oceania"
     },
     {
