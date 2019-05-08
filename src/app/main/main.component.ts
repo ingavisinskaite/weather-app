@@ -25,6 +25,7 @@ export class MainComponent implements OnInit {
   sunrise: string;
   sunset: string;
   windDirection: string;
+  date: string;
 
   cities: Array<Country> = [];
 
@@ -167,6 +168,11 @@ export class MainComponent implements OnInit {
     return continent;
   }
 
+  showDate() {
+    this.date = `${new Date()}`;
+    return this.date;
+  }
+
   showWeathers(event: string) {
     this.showWeather(event);
     this.showTemperature(event);
@@ -177,5 +183,6 @@ export class MainComponent implements OnInit {
     this.showSunset(event);
     this.showHumidity(event);
     this.showWindDirection(event);
+    this.showDate();
   }
 }

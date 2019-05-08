@@ -1,6 +1,6 @@
 <div class="hero">
   <div class="select">
-    <span>Select Your City </span>
+    <span id="select">Select Your City </span>
     <select [(ngModel)]="selectedCity" (ngModelChange)="showWeathers($event)">
       <option *ngFor="let city of cities">{{city.capital}}</option>
     </select>
@@ -11,22 +11,24 @@
             'snowy': weather === 'Snow',
             'fog': weather === 'Fog',
             'mist': weather === 'Mist'}">
-    <div class="city"><img src="../../assets/placeholder.png"> {{selectedCity}}</div>
-    <div class="temperature">{{ temperature }} </div>
-    <div class="weather">{{ weather }}</div>
-    <div class="minMaxTemp"> {{ minTemp }}{{ maxTemp }}</div>
-    <div class="wind"> 
+    <div class="firstPage" *ngIf="!selectedCity">What's the weather in your city?</div>
+    <!-- <div>{{ date }}</div> -->
+    <div class="city" *ngIf="selectedCity"><img src="../../assets/placeholder.png"> {{selectedCity}}</div>
+    <div class="temperature" *ngIf="selectedCity">{{ temperature }} </div>
+    <div class="weather" *ngIf="selectedCity">{{ weather }}</div>
+    <div class="minMaxTemp" *ngIf="selectedCity"> {{ minTemp }}{{ maxTemp }}</div>
+    <div class="wind" *ngIf="selectedCity">
       <p id="wind"> <img src="../../assets/wind.png"> Wind</p>
       <p id="windSpeed">{{ windSpeed }}</p>
       <p id="windDirection">{{ windDirection }}</p>
     </div>
-    <div class="humidity"> 
+    <div class="humidity" *ngIf="selectedCity">
       <p id="humidity"><img src="../../assets/humidity.png"> Humidity</p>
       <p id="hum">{{ humidity }}</p>
     </div>
-    <div class="sun">
+    <div class="sun" *ngIf="selectedCity">
       <p id="sun"><img src="../../assets/sun.png"> Sunrise / Sunset</p>
-      <p id="sunTime">{{ sunrise }} {{ sunset }}</p> 
+      <p id="sunTime">{{ sunrise }} {{ sunset }}</p>
     </div>
   </div>
 </div>

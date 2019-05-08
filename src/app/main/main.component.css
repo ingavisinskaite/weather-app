@@ -11,7 +11,8 @@
     margin-left: 20px;
     height: 600px;
     padding-top: 60px;
-    background-image: url(../../assets/home.jfif)
+    background-image: url(../../assets/home.jfif);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .rainy {
@@ -42,14 +43,25 @@
     margin-top: 40px;
 }
 
+#select {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 select {
     margin-top: 20px;
+    margin-left: 20px;
+}
+
+.firstPage {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    margin-top: 100px;
 }
 
 .temperature {
     margin-left: 46%;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 50px;
     margin-top: 15px;
 }
@@ -73,7 +85,7 @@ select {
     font-size: 20px;
     margin-top: 20px;
     background-color: rgba(124, 121, 121, 0.3);
-    width: 100px;
+    width: 120px;
     height: 30px;
     padding: 15px;
     padding-left: 20px;
